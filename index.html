@@ -1,0 +1,277 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>the Piano</title>
+
+<link href="stylesheet.css" rel="stylesheet" type="text/css" />
+
+
+	
+ 	<script type="text/javascript" src="js/jquery.js"></script>
+  	<script type="text/javascript" src="js/jquery.audioeffects.min.js"></script>
+ 
+	<script type="text/javascript" src="js/piano_sound.js"></script>
+	
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+<body>
+
+<div id="container">
+		<h1>The Piano</h1>
+        
+        <div id="descripition"> 
+            The Piano is a program that you can learn how to read music 			            note, and get familiar with the keyboard.      
+        </div>
+        
+        <div id="button_des"></div>
+        
+		<div id="lession">
+      
+
+		<div id="music_sheet">   
+       		<div id="notes"><img src="images/music_sheet.png"></div>
+     	    <div id="music_notes"> 
+			<li><img src="images/notes.png" class="note1_c"/></li>
+			<li><img src="images/notes.png" class="note1_d"/></li>
+			<li><img src="images/notes.png" class="note1_e"/></li>
+			<li><img src="images/notes.png" class="note1_f"/></li>
+			<li><img src="images/notes.png" class="note1_g"/></li>
+			<li><img src="images/notes.png" class="note1_a"/></li>
+			<li><img src="images/notes.png" class="note1_b"/></li>
+
+			<li><img src="images/middle_c.png" class="note2_c"/></li>
+			<li><img src="images/notes.png" class="note2_d"/></li>
+			<li><img src="images/notes.png" class="note2_e"/></li>
+			<li><img src="images/notes.png" class="note2_f"/></li>
+			<li><img src="images/notes.png" class="note2_g"/></li>
+			<li><img src="images/notes.png" class="note2_a"/></li>
+			<li><img src="images/notes.png" class="note2_b"/></li>
+
+			<li><img src="images/notes.png" class="note3_c"/></li>
+			<li><img src="images/notes.png" class="note3_d"/></li>
+			<li><img src="images/notes.png" class="note3_e"/></li>
+			<li><img src="images/notes.png" class="note3_f"/></li>
+			<li><img src="images/notes.png" class="note3_g"/></li>
+			<li><img src="images/middle_c.png" class="note3_a"/></li>
+			<li><img src="images/note_b.png" class="note3_b"/></li>
+		
+			</div>
+
+		</div>
+
+ 		<div id="note_pressed">
+        
+			<li><img src="images/note_pressed.png" class="note1p_c"/></li>
+			<li><img src="images/note_pressed.png" class="note1p_d"/></li>
+			<li><img src="images/note_pressed.png" class="note1p_e"/></li>
+			<li><img src="images/note_pressed.png" class="note1p_f"/></li>
+			<li><img src="images/note_pressed.png" class="note1p_g"/></li>
+			<li><img src="images/note_pressed.png" class="note1p_a"/></li>
+			<li><img src="images/note_pressed.png" class="note1p_b"/></li>
+
+			<li><img src="images/middle_c_pressed.png" class="note2p_c"/></li>
+			<li><img src="images/note_pressed.png" class="note2p_d"/></li>
+			<li><img src="images/note_pressed.png" class="note2p_e"/></li>
+			<li><img src="images/note_pressed.png" class="note2p_f"/></li>
+			<li><img src="images/note_pressed.png" class="note2p_g"/></li>
+			<li><img src="images/note_pressed.png" class="note2p_a"/></li>
+			<li><img src="images/note_pressed.png" class="note2p_b"/></li>
+
+			<li><img src="images/note_pressed.png" class="note3p_c"/></li>
+			<li><img src="images/note_pressed.png" class="note3p_d"/></li>
+			<li><img src="images/note_pressed.png" class="note3p_e"/></li>
+			<li><img src="images/note_pressed.png" class="note3p_f"/></li>
+			<li><img src="images/note_pressed.png" class="note3p_g"/></li>
+			<li><img src="images/middle_c_pressed.png" class="note3p_a"/></li>
+			<li><img src="images/note_a_pressed.png" class="note3p_b"/></li>
+            
+            
+            <!--!black keys --> 
+            <li><img src="images/noteb.png" class="note1bp_c"/></li>
+            <li><img src="images/noteb.png" class="note1bp_d"/></li>
+			<li><img src="images/noteb.png" class="note1bp_f"/></li>
+            <li><img src="images/noteb.png" class="note1bp_g"/></li>
+            <li><img src="images/noteb.png" class="note1bp_a"/></li>
+            
+             <li><img src="images/noteb.png" class="note2bp_c"/></li>
+            <li><img src="images/noteb.png" class="note2bp_d"/></li>
+			<li><img src="images/noteb.png" class="note2bp_f"/></li>
+            <li><img src="images/noteb.png" class="note2bp_g"/></li>
+            <li><img src="images/noteb.png" class="note2bp_a"/></li>
+            
+             <li><img src="images/noteb.png" class="note3bp_c"/></li>
+            <li><img src="images/noteb.png" class="note3bp_d"/></li>
+			<li><img src="images/noteb.png" class="note3bp_f"/></li>
+            <li><img src="images/noteb.png" class="note3bp_g"/></li>
+            <li><img src="images/noteb.png" class="note3bp_a"/></li>
+            
+			</div>
+       
+ 
+ 
+
+	</div>
+		
+     
+     <div id="the_piano">
+     
+     <div id="piano"></div>
+        
+		
+
+	<div id="music">
+
+
+		<div id="memo-turn-on">
+        <div id="memo">
+		<img src="images/white_memo.png" class="white_memo">
+		</div>
+
+		<div id="black_memo">
+		<img src="images/black_major.png" class="black_major">
+		<img src="images/black_minor.png" class="black_minor">
+	</div>
+	</div>
+
+
+
+		<div id="white_keys">
+			<ul id="white_key">
+
+				<li><a><img src="white_key.png" class="octave1_c"/></a></li>
+				<li><img src="white_key.png" class="octave1_d"/></li>
+				<li><img src="white_key.png" class="octave1_e"/></li>
+				<li><img src="white_key.png" class="octave1_f"/></li>
+				<li><img src="white_key.png" class="octave1_g"/></li>
+				<li><img src="white_key.png" class="octave1_a"/></li>
+				<li><img src="white_key.png" class="octave1_b"/></li>
+
+
+				<li><img src="white_key.png" class="octave2_c"/></li>
+				<li><img src="white_key.png" class="octave2_d"/></li>
+				<li><img src="white_key.png" class="octave2_e"/></li>
+				<li><img src="white_key.png" class="octave2_f"/></li>
+				<li><img src="white_key.png" class="octave2_g"/></li>
+				<li><img src="white_key.png" class="octave2_a"/></li>
+				<li><img src="white_key.png" class="octave2_b"/></li>
+
+				<li><img src="white_key.png" class="octave3_c"/></li>
+				<li><img src="white_key.png" class="octave3_d"/></li>
+				<li><img src="white_key.png" class="octave3_e"/></li>
+				<li><img src="white_key.png" class="octave3_f"/></li>
+				<li><img src="white_key.png" class="octave3_g"/></li>
+				<li><img src="white_key.png" class="octave3_a"/></li>
+				<li><img src="white_key.png" class="octave3_b"/></li>
+			</ul>
+		</div>
+
+
+	<div id="black_keys">
+	<ul id="black_keys_cd_octave1">
+<li><img src="black_key.png" class="octave1_black_c" /></li>
+<li><img src="black_key.png" class="octave1_black_d"/></li>
+</ul>
+
+
+<ul id="black_keys_fgb_octave1">
+<li><img src="black_key.png" class="octave1_black_f"/></li>
+<li><img src="black_key.png" class="octave1_black_g"/></li>
+<li><img src="black_key.png" class="octave1_black_a"/></li>
+</ul>
+
+
+
+<ul id="black_keys_cd_octave2">
+<li><img src="black_key.png" class="octave2_black_c" /></li>
+<li><img src="black_key.png" class="octave2_black_d"/></li>
+</ul>
+
+<ul id="black_keys_fgb_octave2">
+<li><img src="black_key.png" class="octave2_black_f"/></li>
+<li><img src="black_key.png" class="octave2_black_g"/></li>
+<li><img src="black_key.png" class="octave2_black_a"/></li>
+</ul>
+
+<ul id="black_keys_cd_octave3">
+<li><img src="black_key.png" class="octave3_black_c" /></li>
+<li><img src="black_key.png" class="octave3_black_d"/></li>
+</ul>
+
+<ul id="black_keys_fgb_octave3">
+<li><img src="black_key.png" class="octave3_black_f"/></li>
+<li><img src="black_key.png" class="octave3_black_g"/></li>
+<li><img src="black_key.png" class="octave3_black_a"/></li>
+</ul>
+</div>
+
+
+
+<div id="memo-off">Turn OFF</div>
+<div id="memo-on">Turn ON</div>
+
+
+ <audio id="1_c"><source src="audio/octave1_c.wav"  /></audio>
+ <audio id="1_d"><source src="audio/octave1_d.wav"  /></audio>
+ <audio id="1_e"><source src="audio/octave1_e.wav"  /></audio>
+ <audio id="1_f"><source src="audio/octave1_f.wav"  /></audio>
+ <audio id="1_g"><source src="audio/octave1_g.wav"  /></audio>
+ <audio id="1_a"><source src="audio/octave1_a.wav"  /></audio>
+ <audio id="1_b"><source src="audio/octave1_b.wav"  /></audio>
+ 
+ <audio id="1b_c"><source src="audio/octave1_black_c.wav"  /></audio>
+ <audio id="1b_d"><source src="audio/octave1_black_d.wav"  /></audio>
+ <audio id="1b_f"><source src="audio/octave1_black_f.wav"  /></audio>
+ <audio id="1b_g"><source src="audio/octave1_black_g.wav"  /></audio>
+ <audio id="1b_a"><source src="audio/octave1_black_a.wav"  /></audio>
+ 
+ 
+
+ <audio id="2_c"><source src="audio/octave2_c.wav"  /></audio>
+ <audio id="2_d"><source src="audio/octave2_d.wav"  /></audio>
+ <audio id="2_e"><source src="audio/octave2_e.wav"  /></audio>
+ <audio id="2_f"><source src="audio/octave2_f.wav"  /></audio>
+ <audio id="2_g"><source src="audio/octave2_g.wav"  /></audio>
+ <audio id="2_a"><source src="audio/octave2_a.wav"  /></audio>
+ <audio id="2_b"><source src="audio/octave2_B.wav"  /></audio>
+ 
+ <audio id="2b_c"><source src="audio/octave2_black_c.wav"  /></audio>
+ <audio id="2b_d"><source src="audio/octave2_black_d.wav"  /></audio>
+ <audio id="2b_f"><source src="audio/octave2_black_f.wav"  /></audio>
+ <audio id="2b_g"><source src="audio/octave2_black_g.wav"  /></audio>
+ <audio id="2b_a"><source src="audio/octave2_black_a.wav"  /></audio>
+ 
+ 
+ <audio id="3_c"><source src="audio/octave3_c.wav"  /></audio>
+ <audio id="3_d"><source src="audio/octave3_d.wav"  /></audio>
+ <audio id="3_e"><source src="audio/octave3_e.wav"  /></audio>
+ <audio id="3_f"><source src="audio/octave3_f.wav"  /></audio>
+ <audio id="3_g"><source src="audio/octave3_g.wav"  /></audio>
+ <audio id="3_a"><source src="audio/octave3_a.wav"  /></audio>
+ <audio id="3_b"><source src="audio/octave3_b.wav"  /></audio>
+
+ 
+ <audio id="3b_c"><source src="audio/octave3_black_c.wav"  /></audio>
+ <audio id="3b_d"><source src="audio/octave3_black_d.wav"  /></audio>
+ <audio id="3b_f"><source src="audio/octave3_black_f.wav"  /></audio>
+ <audio id="3b_g"><source src="audio/octave3_black_g.wav"  /></audio>
+ <audio id="3b_a"><source src="audio/octave3_black_a.wav"  /></audio>
+ 
+
+ 
+</div>
+</div>
+</div>
+</body>
+</html>
